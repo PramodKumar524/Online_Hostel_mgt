@@ -1,0 +1,8 @@
+CREATE TABLE Complaints (
+    ComplaintID INT PRIMARY KEY AUTO_INCREMENT,
+    StudentID INT,
+    ComplaintText TEXT,
+    Status VARCHAR(20) DEFAULT 'Pending',
+    DateReported DATE,
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
