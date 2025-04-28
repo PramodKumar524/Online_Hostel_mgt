@@ -1,0 +1,4 @@
+SELECT Students.Name, Payments.Amount, Payments.Status
+FROM Students
+INNER JOIN Payments ON Students.StudentID = Payments.StudentID
+WHERE Payments.Status = 'Unpaid';
