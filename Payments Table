@@ -1,0 +1,8 @@
+CREATE TABLE Payments (
+    PaymentID INT PRIMARY KEY AUTO_INCREMENT,
+    StudentID INT,
+    Amount DECIMAL(10,2),
+    PaymentDate DATE,
+    Status VARCHAR(20),
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
