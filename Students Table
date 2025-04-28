@@ -1,0 +1,9 @@
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100),
+    Email VARCHAR(100) UNIQUE,
+    Phone VARCHAR(15),
+    RoomID INT,
+    Gender VARCHAR(10),
+    Address VARCHAR(255)
+);
