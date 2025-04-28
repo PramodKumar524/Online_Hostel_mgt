@@ -1,0 +1,3 @@
+UPDATE Rooms
+SET Occupied = Occupied + 1
+WHERE RoomID = 2;
