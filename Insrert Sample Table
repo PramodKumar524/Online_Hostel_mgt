@@ -1,0 +1,20 @@
+INSERT INTO Rooms (RoomNumber, RoomType, Capacity) VALUES 
+('A101', 'Single', 1),
+('A102', 'Double', 2),
+('B201', 'Triple', 3);
+
+INSERT INTO Students (Name, Email, Phone, RoomID, Gender, Address) VALUES 
+('John Doe', 'john@example.com', '9876543210', 1, 'Male', 'City A'),
+('Jane Smith', 'jane@example.com', '8765432109', 2, 'Female', 'City B');
+
+INSERT INTO Staff (Name, Role, Contact) VALUES 
+('Mr. Adams', 'Warden', '1234567890'),
+('Ms. Daisy', 'Receptionist', '2345678901');
+
+INSERT INTO Payments (StudentID, Amount, PaymentDate, Status) VALUES 
+(1, 5000, '2025-04-01', 'Paid'),
+(2, 5000, '2025-04-02', 'Unpaid');
+
+INSERT INTO Complaints (StudentID, ComplaintText, DateReported) VALUES 
+(1, 'AC not working', '2025-04-10'),
+(2, 'Water leakage in bathroom', '2025-04-11');
