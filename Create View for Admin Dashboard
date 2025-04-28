@@ -1,0 +1,12 @@
+CREATE VIEW AdminDashboard AS
+SELECT 
+    s.Name AS StudentName, 
+    r.RoomNumber, 
+    p.Amount, 
+    p.Status AS PaymentStatus,
+    c.ComplaintText,
+    c.Status AS ComplaintStatus
+FROM Students s
+LEFT JOIN Rooms r ON s.RoomID = r.RoomID
+LEFT JOIN Payments p ON s.StudentID = p.StudentID
+LEFT JOIN Complaints c ON s.StudentID = c.StudentID;
