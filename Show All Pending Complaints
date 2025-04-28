@@ -1,0 +1,4 @@
+SELECT Students.Name, Complaints.ComplaintText, Complaints.DateReported
+FROM Complaints
+INNER JOIN Students ON Complaints.StudentID = Students.StudentID
+WHERE Complaints.Status = 'Pending';
