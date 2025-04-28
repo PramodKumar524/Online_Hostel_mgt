@@ -1,0 +1,7 @@
+CREATE TABLE Rooms (
+    RoomID INT PRIMARY KEY AUTO_INCREMENT,
+    RoomNumber VARCHAR(10) UNIQUE,
+    RoomType VARCHAR(50),
+    Capacity INT,
+    Occupied INT DEFAULT 0
+);
