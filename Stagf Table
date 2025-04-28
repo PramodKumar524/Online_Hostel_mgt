@@ -1,0 +1,6 @@
+CREATE TABLE Staff (
+    StaffID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100),
+    Role VARCHAR(50),
+    Contact VARCHAR(15)
+);
